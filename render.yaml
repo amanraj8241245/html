@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: html-converter-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python server.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11
+      - key: API_ID
+        value: 0
+        scope: run
+      - key: API_HASH
+        value: ""
+        scope: run
+      - key: BOT_TOKEN
+        value: ""
+        scope: run
+      - key: LOG_CHANNEL
+        value: 0
+        scope: run
