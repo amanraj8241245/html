@@ -18,6 +18,7 @@ from config import API_ID, API_HASH, BOT_TOKEN, LOG_CHANNEL, ALLOWED_USERS
 from html_generator import txt_to_html
 from html_to_txt import html_to_txt
 
+from server import keep_alive
 # ── Logging ───────────────────────────────────────────────────────────────────
 logging.basicConfig(
     level=logging.INFO,
@@ -277,4 +278,5 @@ async def handle_doc(client: Client, msg: Message):
 # ════════════════════════════════════════════════════════════════════════════
 if __name__ == "__main__":
     log.info("Bot starting...")
+keep_alive()
     app.run()
