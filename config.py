@@ -1,12 +1,7 @@
 import os
 
-API_ID      = int(os.environ.get("API_ID", 0))
-API_HASH    = os.environ.get("API_HASH", "")
-BOT_TOKEN   = os.environ.get("BOT_TOKEN", "")
-
-# Numeric ID of log channel  e.g. -1001234567890
-# Bot must be ADMIN in that channel
-LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", 0))
-
-# Leave [] to allow everyone
-ALLOWED_USERS: list[int] = []
+API_ID = 36123528
+API_HASH = '7f77eb79febe2b7cf5d33d6d57bc8ac0'
+BOT_TOKEN = '8564887159:AAFk2GpNH96K_G0Vm1CfoOX3EX0GBWzeKoQ'
+LOG_CHANNEL = -1003891933514
+ALLOWED_USERS = [5488188241] # Default or extracted from context
